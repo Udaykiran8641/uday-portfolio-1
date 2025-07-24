@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmagalla Uday Kiran - Mechanical Engineer | QC Engineer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800;
+        }
+        .section-padding {
+            /* Adjusted padding to be slightly more generous on larger screens */
+            @apply py-20 px-4 sm:px-8 lg:px-12;
+        }
+        /* Custom scroll-behavior for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-indigo-600 rounded-md p-2">Uday Kiran</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#about" class="text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#skills" class="text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#projects" class="text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#contact" class="text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Icon when menu is closed. -->
+                        <!-- Heroicon name: outline/menu -->
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!-- Icon when menu is open. -->
+                        <!-- Heroicon name: outline/x -->
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about" class="text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#skills" class="text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Skills</a>
+                <a href="#projects" class="text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="section-padding bg-gradient-to-r from-indigo-500 to-purple-600 text-white flex items-center justify-center min-h-screen">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left space-y-8 md:space-y-0 md:space-x-12">
+            <div class="flex-shrink-0">
+                <img src="ssuda.jpg" alt="Anmagalla Uday Kiran" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-xl border-4 border-white transform hover:scale-105 transition duration-300 ease-in-out">
+            </div>
+            <div class="max-w-lg">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+                    Hi, I'm <span class="text-yellow-300">Anmagalla Uday Kiran</span>
+                </h1>
+                <p class="text-lg sm:text-xl lg:text-2xl mb-6">
+                    A <span class="font-bold">Mechanical Engineer | QC Engineer at HBL</span>, with practical exposure to industrial training, fabrication, and mechanical systems.
+                </p>
+                <a href="#projects" class="inline-block bg-white text-indigo-600 hover:bg-indigo-100 font-semibold py-3 px-8 rounded-full shadow-lg transform hover:-translate-y-1 transition duration-300 ease-in-out">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-padding bg-gray-100">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">About Me</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                I am a motivated and detail-oriented Mechanical Engineering graduate, currently applying my technical knowledge and practical exposure as a <span class="font-semibold text-indigo-600">QC Engineer at HBL</span>. My experience includes hands-on industrial training in Refrigeration and Air Conditioning (R&AC) systems, welding techniques (Arc, MIG, Tig, Gas), and Non-Destructive Testing (NDT) methods. I've also gained a strong understanding of workshop practices, safety measures, and mechanical maintenance.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Passionate about working in collaborative environments, I aim to deliver innovative and cost-effective engineering solutions. My project work has honed my skills in mechanical design, force calculation, torque transmission, and power flow in mechanical systems, always emphasizing teamwork and proper documentation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-white">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">My Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-6 bg-indigo-50 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Mechanical Tools & Practices</h3>
+                    <ul class="text-gray-700 text-sm space-y-1">
+                        <li>Refrigeration & Air Conditioning (R&AC)</li>
+                        <li>Welding Techniques (Arc, MIG, Tig, Gas)</li>
+                        <li>Non-Destructive Testing (NDT)</li>
+                        <li>Basic Workshop Tools & Equipment Handling</li>
+                        <li>Mechanical Maintenance Techniques</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-purple-50 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">Software & Productivity Tools</h3>
+                    <ul class="text-gray-700 text-sm space-y-1">
+                        <li>Basic CAD (AutoCAD, SolidWorks)</li>
+                        <li>MS Word, Excel, PowerPoint</li>
+                        <li>Technical Documentation</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-green-50 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Behavioral & Analytical Skills</h3>
+                    <ul class="text-gray-700 text-sm space-y-1">
+                        <li>Strong grasp of mechanical systems</li>
+                        <li>Effective Troubleshooting</li>
+                        <li>Technical Reasoning</li>
+                        <li>Effective Communication & Teamwork</li>
+                        <li>Adaptability & Time Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Major Project: 3-Speed Gear Box Mechanism -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/ECEFF1/424242?text=Gearbox+Mechanism" alt="3-Speed Gear Box Mechanism" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">3-Speed Gear Box Mechanism</h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Designed and fabricated a multi-speed gearbox mechanism for load variation simulation. This project enhanced my understanding of torque transmission and power flow in mechanical systems, emphasizing teamwork, mechanical design, and testing.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-200 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Mechanical Design</span>
+                            <span class="bg-purple-200 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Fabrication</span>
+                            <span class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Torque Transmission</span>
+                            <span class="bg-yellow-200 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Teamwork</span>
+                        </div>
+                        <a href="#" class="inline-block bg-indigo-600 text-white hover:bg-indigo-700 font-semibold py-2 px-5 rounded-md text-sm transition duration-300 ease-in-out">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Mini Project: Fabrication of Can Crushing Machine -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/ECEFF1/424242?text=Can+Crushing+Machine" alt="Can Crushing Machine" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Fabrication of Can Crushing Machine</h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Fabricated a machine for compressing aluminum cans using basic mechanical components. This project focused on efficiency, force calculation, and robust mechanical structure design, also involving coordination with the team and proper documentation practices.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-200 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Fabrication</span>
+                            <span class="bg-purple-200 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Force Calculation</span>
+                            <span class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Mechanical Structure</span>
+                            <span class="bg-yellow-200 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Documentation</span>
+                        </div>
+                        <a href="#" class="inline-block bg-indigo-600 text-white hover:bg-indigo-700 font-semibold py-2 px-5 rounded-md text-sm transition duration-300 ease-in-out">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-white">
+        <div class="container mx-auto max-w-2xl text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">Get In Touch</h2>
+            <p class="text-lg text-gray-700 mb-8">
+                Have a question, a project opportunity, or just want to connect? Feel free to reach out!
+            </p>
+            <div class="flex flex-col space-y-4">
+                <a href="mailto:udaykiran8641@gmail.com" class="bg-indigo-600 text-white hover:bg-indigo-700 font-semibold py-3 px-6 rounded-md shadow-lg transform hover:-translate-y-1 transition duration-300 ease-in-out flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    Email Me
+                </a>
+                <a href="tel:+919398665174" class="bg-green-600 text-white hover:bg-green-700 font-semibold py-3 px-6 rounded-md shadow-lg transform hover:-translate-y-1 transition duration-300 ease-in-out flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l1.3 9.137a1 1 0 01-.223.98l-1.63 1.63a1 1 0 00-.285.577l-.617 2.464a1 1 0 00.737 1.12l.666.167a1.1 1.1 0 00.999-.44l2.757-3.033a1.1 1.1 0 00.176-1.147l-1.353-2.316a1.1 1.1 0 00-.709-.597l-2.03-1.015a1 1 0 00-.319-.074l-.452-.073A.1.1 0 017 9.407a1.1 1.1 0 00-1.077-1.12l-1.802.45A1.1 1.1 0 003 9.407v2.186a1.1 1.1 0 001.077 1.12l.452.073a1 1 0 00.319.074l2.03 1.015a1.1 1.1 0 00.709.597l1.353 2.316a1.1 1.1 0 00-.176 1.147l-2.757 3.033a1.1 1.1 0 00-.999.44l-.666-.167a1 1 0 00-.737-1.12l.617-2.464a1 1 0 00.285-.577l1.63-1.63a1 1 0 01.223-.98l-1.3-9.137A1 1 0 012 3z"></path></svg>
+                    Call Me
+                </a>
+                <a href="https://linkedin.com/in/yourlinkedinprofile" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white hover:bg-blue-700 font-semibold py-3 px-6 rounded-md shadow-lg transform hover:-translate-y-1 transition duration-300 ease-in-out flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path></svg>
+                    Connect on LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; <span id="current-year"></span> Anmagalla Uday Kiran. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#home" class="text-gray-400 hover:text-white text-sm">Home</a>
+                <a href="#about" class="text-gray-400 hover:text-white text-sm">About</a>
+                <a href="#skills" class="text-gray-400 hover:text-white text-sm">Skills</a>
+                <a href="#projects" class="text-gray-400 hover:text-white text-sm">Projects</a>
+                <a href="#contact" class="text-gray-400 hover:text-white text-sm">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu after clicking a link
+                if (document.getElementById('mobile-menu').classList.contains('block')) {
+                    toggleMobileMenu();
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('block');
+            // Toggle menu icon
+            mobileMenuButton.querySelector('svg:nth-child(1)').classList.toggle('hidden');
+            mobileMenuButton.querySelector('svg:nth-child(2)').classList.toggle('hidden');
+        }
+
+        mobileMenuButton.addEventListener('click', toggleMobileMenu);
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
